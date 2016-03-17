@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.5.1
+3 info using node@v4.1.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/tomi/Documents/Programming/Github/i18n-client',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/tomi/.npm/i18n-client/0.0.6/package.tgz not in flight; packing
+9 info lifecycle i18n-client@0.0.6~prepublish: i18n-client@0.0.6
+10 silly lifecycle i18n-client@0.0.6~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/tomi/.npm/i18n-client/0.0.6/package.tgz',
+11 verbose tar pack   '/Users/tomi/Documents/Programming/Github/i18n-client' ]
+12 verbose tarball /Users/tomi/.npm/i18n-client/0.0.6/package.tgz
+13 verbose folder /Users/tomi/Documents/Programming/Github/i18n-client
+14 verbose addLocalTarball adding from inside cache /Users/tomi/.npm/i18n-client/0.0.6/package.tgz
+15 silly cache afterAdd i18n-client@0.0.6
+16 verbose afterAdd /Users/tomi/.npm/i18n-client/0.0.6/package/package.json not in flight; writing
+17 verbose afterAdd /Users/tomi/.npm/i18n-client/0.0.6/package/package.json written
+18 silly publish { name: 'i18n-client',
+18 silly publish   version: '0.0.6',
+18 silly publish   description: 'i18n yours application, client side',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   keywords: [ 'i18n' ],
+18 silly publish   author: { name: 'Tomas Trescak' },
+18 silly publish   license: 'MIT',
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   _id: 'i18n-client@0.0.6',
+18 silly publish   _shasum: '3dfae2113f977975de694678e3714eeae8b34fa0',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name i18n-client
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/i18n-client
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/tomi/.npm/i18n-client/0.0.6/package.tgz
+26 verbose request uri https://registry.npmjs.org/i18n-client
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 3:39:15 PM
+29 verbose request using bearer token for auth
+30 verbose request id 05017a8650934a3a
+31 http request PUT https://registry.npmjs.org/i18n-client
+32 http 403 https://registry.npmjs.org/i18n-client
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Thu, 10 Mar 2016 04:39:16 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-syd1625-SYD',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1457584755.428554,VS0,VE742' }
+34 verbose request invalidating /Users/tomi/.npm/registry.npmjs.org/i18n-client on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.6." : i18n-client
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid i18n-client
+39 verbose cwd /Users/tomi/Documents/Programming/Github/i18n-client
+40 error Darwin 15.3.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+42 error node v4.1.2
+43 error npm  v3.5.1
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.6." : i18n-client
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
