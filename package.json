@@ -9,6 +9,10 @@
   "keywords": [
     "i18n"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomitrescak/i18n-client"
+  },
   "author": "Tomas Trescak",
   "license": "MIT"
 }
